@@ -38,8 +38,6 @@ class CommentsController {
     const { imageObject, commentContent } = commentObject
 
     // Use the found image object to select the appropriate "ul" to append the comment to
-    $(`#comments-${imageObject.id}`).append(`
-        ${commentObject.commentEl()}
-    `)
+    $(`#comments-${imageObject.id}`).append(commentObject.commentEl())
   }
 }

@@ -33,6 +33,6 @@ class Comment {
     }
 }
 
-// Static properties not yet supported in class syntax (would need an additional plugin)
+// Static properties not yet supported in class syntax (would need an additional plugin - class-properties-transform)
 // Returns all the comment objects
 Comment.all = []
